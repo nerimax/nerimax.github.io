@@ -3,10 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>AstroBoost</title>
+	<title>ASTRO-BOOST | iPhone &amp; Android</title>
 
 	<meta name="description" content="AstroBoost - A challenging arcade action game created by a Japanese game developer with 40 years of experience.">
 
+    <link rel="canonical" href="https://nerimax.github.io/AstroBoost/marketing/">
+    <link rel="alternate" hreflang="en" href="https://nerimax.github.io/AstroBoost/marketing/">
+    <link rel="alternate" hreflang="ja" href="https://nerimax.github.io/AstroBoost/marketing/ja/">
 	<style>
 		body{
 			margin:0;
@@ -62,13 +65,25 @@
 			opacity:0.6;
 			font-size:14px;
 		}
+
+        .languages{display:flex;justify-content:flex-end;gap:16px;margin-bottom:24px;font-size:16px;}
+        .languages a{color:#a8d6ff;text-underline-offset:4px;padding:8px 4px;}
+        .languages a[aria-current="page"]{color:#fff;font-weight:bold;}
+        .downloads{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;margin-top:30px;}
+        .downloads .button{margin-top:0;box-sizing:border-box;min-height:56px;}
+        .button.google-play{background:#0c7547;}
+        a:focus-visible{outline:3px solid #ffca5c;outline-offset:5px;}
+        .availability{font-size:15px;color:#c8d0e4;margin-top:22px;}
+        @media(max-width:480px){h1{font-size:36px;}.tagline{font-size:21px;}.downloads{flex-direction:column;}.button{font-size:18px;}}
+
 	</style>
 </head>
 <body>
 
 	<div class="container">
+        <nav class="languages" aria-label="Language"><a href="./" lang="en" aria-current="page">English</a><a href="ja/" lang="ja">日本語</a></nav>
 
-		<h1>ASTRO BOOST</h1>
+		<h1>ASTRO-BOOST</h1>
 
 		<div class="tagline">
 			Tap. Hold. Survive.
@@ -78,7 +93,8 @@
 
 		<p>
 			A brutally challenging arcade action game.<br>
-			Simple controls, intense gameplay.
+			Simple controls, intense gameplay.<br>
+            Tap to rise. Hold to descend slowly.
 		</p>
 
 		<p>
@@ -86,10 +102,11 @@
 			a Japanese game developer with 40 years of experience.
 		</p>
 
-		<a class="button"
-			href="https://apps.apple.com/jp/app/astroboost/id6761886332">
-			Download on the App Store
-		</a>
+        <div class="downloads" aria-label="Download the game">
+            <a class="button" href="https://apps.apple.com/jp/app/id6761886332">Download on the App Store</a>
+            <a class="button google-play" href="https://play.google.com/store/apps/details?id=com.shintaro.astroboost">Get it on Google Play</a>
+        </div>
+        <p class="availability">Available for iPhone and Android.<br>Free to download. Contains ads and in-app purchases.</p>
 
 		<div class="footer">
 			© AstroBoost
