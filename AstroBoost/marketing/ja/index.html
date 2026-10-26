@@ -48,17 +48,6 @@
 			font-size:18px;
 		}
 
-		.button{
-			display:inline-block;
-			margin-top:30px;
-			padding:16px 32px;
-			background:#007aff;
-			color:#fff;
-			text-decoration:none;
-			border-radius:12px;
-			font-size:20px;
-			font-weight:bold;
-		}
 
 		.footer{
 			margin-top:60px;
@@ -69,12 +58,15 @@
         .languages{display:flex;justify-content:flex-end;gap:16px;margin-bottom:24px;font-size:16px;}
         .languages a{color:#a8d6ff;text-underline-offset:4px;padding:8px 4px;}
         .languages a[aria-current="page"]{color:#fff;font-weight:bold;}
-        .downloads{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;margin-top:30px;}
-        .downloads .button{margin-top:0;box-sizing:border-box;min-height:56px;}
-        .button.google-play{background:#0c7547;}
+        .downloads{display:flex;justify-content:center;flex-wrap:wrap;align-items:center;gap:4px;margin-top:30px;}
+        .store-badge{display:inline-flex;align-items:center;justify-content:center;padding:10px;}
+        .store-badge img{display:block;width:auto;height:60px;}
+        .store-badge.google-play{padding:0;}
+        .store-badge.google-play img{height:90px;}
+
         a:focus-visible{outline:3px solid #ffca5c;outline-offset:5px;}
         .availability{font-size:15px;color:#c8d0e4;margin-top:22px;}
-        @media(max-width:480px){h1{font-size:36px;}.tagline{font-size:21px;}.downloads{flex-direction:column;}.button{font-size:18px;}}
+        @media(max-width:480px){h1{font-size:36px;}.tagline{font-size:21px;}.downloads{flex-direction:column;}}
 
 	</style>
 </head>
@@ -96,8 +88,8 @@
 		<p>40年の経験を持つ<br>日本のゲーム開発者による作品です。</p>
 
         <div class="downloads" aria-label="ゲームをダウンロード">
-            <a class="button" href="https://apps.apple.com/jp/app/id6761886332">App Storeでダウンロード</a>
-            <a class="button google-play" href="https://play.google.com/store/apps/details?id=com.shintaro.astroboost">Google Playでダウンロード</a>
+            <a class="store-badge" href="https://apps.apple.com/jp/app/id6761886332"><img src="../assets/app-store-ja.svg" alt="App Storeからダウンロード"></a>
+            <a class="store-badge google-play" href="https://play.google.com/store/apps/details?id=com.shintaro.astroboost"><img src="../assets/google-play-ja.png" alt="Google Playで手に入れよう" width="646" height="250"></a>
         </div>
         <p class="availability">iPhone・Androidで配信中。<br>ダウンロード無料（広告・アプリ内購入あり）。</p>
 
