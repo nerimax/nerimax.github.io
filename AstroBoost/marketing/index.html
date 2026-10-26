@@ -62,7 +62,8 @@
         .store-badge{display:inline-flex;align-items:center;justify-content:center;padding:10px;}
         .store-badge img{display:block;width:auto;height:60px;}
         .store-badge.google-play{padding:0;}
-        .store-badge.google-play img{height:90px;}
+        /* Match the visible badge height (60px), excluding transparent image margins. */
+        .store-badge.google-play img{height:89.285714px;}
 
         a:focus-visible{outline:3px solid #ffca5c;outline-offset:5px;}
         .availability{font-size:15px;color:#c8d0e4;margin-top:22px;}
